@@ -1,0 +1,80 @@
+arrays :
+
+
+  - collection of similar data types
+
+  - in java, array is an object
+
+  - how to create array object ?
+
+        primitive arrays:
+
+          
+           int[] nums = new int[5];
+
+           double[] scores = new double[6];
+
+           char[] chars = new char[3];
+
+       reference arrays:  
+
+          String[] names = new String[4];
+
+          names[0] = "sql";
+          names[1] = "c++";
+          names[2] = "maven";
+          names[3] = "git";
+
+        How to store user defined objects references in array ?
+
+         class Product {
+  		int productId;
+  		String productName;
+  		double productPrice; 
+		String category; 	
+
+  		Product(int productId, String productName, double productPrice, String category) {
+    			this.productId = productId;
+    			this.productName = productName;
+    			this.productPrice = productPrice;
+			this.category = category;    
+  		}
+            }
+
+             ======================================
+
+               Product p1 = new Product(10,"Iphonex",85000,"Mobile");
+               Product p2 = new Product(20,"DellXP",120000,"Laptop");
+               Product p3 = new Product(30,"SonyZ+",15000,"Headphone");
+               Product p4 = new Product(40,"SamsungF50",45000,"Mobile");
+
+
+            
+		Product[] myProducts = new Product[3];
+
+		myProducts[0] = p1;
+                myProducts[1] = p2;
+                myProducts[2] = p3;
+
+  =======================================================
+
+     int[] nums = new int[3]; // memory is allocated and default values (for integer its 0) stored inside array
+
+
+      - array initialization
+
+           int[] nums = {10,20,30,40};
+
+           char[] chs = {'a', 'e','i','o','u'};
+
+           String[] courses = {"sql',"git", "java"};
+
+           Product[] myProducts = {p1,p2,p3};
+
+
+       
+
+        
+
+
+
