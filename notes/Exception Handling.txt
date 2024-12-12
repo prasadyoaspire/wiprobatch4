@@ -1,0 +1,191 @@
+                          Exception Handling
+
+==================================================================================
+
+ errors :
+
+    1. compile time
+
+                 - fault of the programmer
+
+                  - occur at compilation
+
+    2. run time
+
+               - not a fault of the programmer
+
+               - occur during runtime
+
+               - runtime errors are called exceptions
+
+  
+  If an exception occur what will happen?
+
+              - program terminated unexpectedly
+
+  What is exception handling ?
+
+             - if an exception occur program terminated abnormally
+              - to avoid abnormal termination we need catch/handle the exceptions
+
+  How to handle the exceptions?
+
+   - using some keywords:
+
+                           	1. try   - doubtful code inside try block
+				2. catch - handling code
+				3. throw  - to throw exceptions explicitly - throwing user defined exceptions explicitly
+				4. throws - to declare exception
+				5. finally - clean up code, resource releasing code
+
+  
+
+  Hierarchy of Java Exception classes:
+
+      		Throwable        
+            
+
+    Exception			Error
+
+
+   - Error type we can't handle
+
+   - Exception type we can handle
+
+  
+ Types of Exceptions :
+
+
+    1. checked exceptions  - except RuntimeException, all other exceptions
+
+    2. unchecked exceptions  - RuntimeException and its sub classes
+
+
+
+=============================================================
+
+  Rules: 
+
+  1. one try can have multiple catch blocks
+
+       try {
+
+       }
+       catch(....) {
+
+        }
+       catch(...) {
+
+       }
+
+2. try block always followed by either catch or finally, otherwise compiler reports an error
+
+    try {
+
+    }
+    catch(Exception e) {
+
+    }
+
+    or 
+
+    try {
+
+    }
+    finally {
+
+    }    
+
+
+3. Multiple exceptions in a single catch block (since Java 7)
+
+   try {
+
+    	// Code that might throw an exception
+
+   } 
+   catch (IOException | SQLException e) {
+
+    	// Handle both IOException and SQLException
+   }  
+
+ 4. finally block
+
+     The finally block is optional and runs regardless of whether an exception occurred or not.
+     It's typically used for cleanup activities, like closing files or releasing resources.
+
+     	try {
+    		// Code that might throw an exception
+	} 
+	catch (Exception e) {
+    		// Handle the exception
+	} 
+	finally {
+    		// Code that will run no matter what (e.g., cleanup code)
+	}	
+
+
+=================================================================================================
+
+
+Checked vs Unchecked Exceptions:
+
+Checked exceptions: Exceptions that must be either caught or declared in the method signature (IOException, SQLException, etc.). These exceptions are checked at compile time.
+
+Unchecked exceptions: Subclasses of RuntimeException (like NullPointerException, ArrayIndexOutOfBoundsException, etc.). These are not required to be caught or declared and are usually programming bugs.
+
+
+   -by providing correct input values we can avoid Unchecked exceptions
+
+  - even though by providing correct input values we can't avoid Checked exceptions
+
+=================================================================================================
+
+How to declare exceptions:
+      
+    - using throws keyword
+
+     - declaring exception means - the method delegating the handling responsibility to the calling method
+
+
+
+
+
+ User Defined Exceptions:
+
+  - for user defined conditions we are throwing user defined exceptions
+
+  e.g 
+
+         if input age is less than 18 years, I want to throw some exception
+
+  How to create user defined exception:   
+
+
+    1. to create checked user defined exceptions 
+
+               class MyException extends Exception {
+
+               }
+
+    2. to create unchecked user defined exception
+
+             class MyException extends RuntimeException {
+
+             }
+             
+   - For user defined exceptions we have to throw the exception explicitly using throw keyword
+
+           MyException me = new MyException();
+           throw me;
+
+
+
+
+
+
+				
+
+
+
+   
