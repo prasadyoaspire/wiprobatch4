@@ -100,10 +100,9 @@ class Company {
 
 Tasks:
 
- sortByName() :  Write a code to get empList sorted in ascending order by name
-                  return the new sorted list
+ sortByName() :  Write a code to get empList sorted in ascending order by name return the new sorted list
 
- sortOnTheBasisOfSalary() : write a code to sort the name of employees based on the salary ( decreasing order of salary), put it into 			    a list and return the list
+ sortOnTheBasisOfSalary() : Write a code to sort the name of employees based on the salary ( decreasing order of salary), put it into a list and return the list
 
 ==============================================================================================
 
