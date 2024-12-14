@@ -106,5 +106,47 @@ Tasks:
 
 ==============================================================================================
 
+Handson 4:
+
+class Plant {
+  private int length;
+  private int width;
+
+  //constructor with public visibility
+  //Define getters and setters with public visibility
+}
+
+class Garden {
+ private String ArrayList<Plant> plants = new ArrayList<>();
+ private int totalArea; 
+ private int occupyArea;
+ public Garden(int totalArea) {
+	this.totalArea = totalArea;
+ }     
+ public String plantTree(Plant plant) {
+   //write your logic
+ } 
+
+}
+
+Tasks:
+
+String plantTree(Plant plant) :
+
+  - calculate the area of the provided plant by multiplying its length and width
+  - if sum of the current occupyArea and the area of the new plant is less than or equal to the totalArea, the plant should be added to the plants ArrayList, and the occupyArea should be updated accordingly.
+  - if there is enough space in the garden, the method should return the string "Plant more" to indicate that more plants can be planted.
+   - if there is not enough space to accommodate the new plant, the method should return the string "No area" to indicate that plant can not be planted due to insufficient space in the garden.
+
+Sample input:
+	Plant plant1 = new Plant(10,10);
+        Garden garden = new Garden(1000);
+        String msg = garden.plantTree(plant1);
+
+Sample output:
+	Plant more
+
+ 
+
 
  
