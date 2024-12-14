@@ -74,4 +74,38 @@ smaple output
 
                [a=3,p=2,l=1,d=1]
 
+=======================================================================================================
+
+Handson 3:
+
+class Employee {  
+   private String name
+   private int salary
+   // constructor with public visibility
+   // Define getter setters with public visibility
+   // override toString method
+}
+
+class Company {
+
+  private ArrayList<Employee> empList;
+
+  public ArrayList<Employee> sortByName(){
+     //write your logic
+  }
+  ArrayList<String> sortOnTheBasisOfSalary() {
+     //write your logic
+  }
+}
+
+Tasks:
+
+ sortByName() :  Write a code to get empList sorted in ascending order by name
+                  return the new sorted list
+
+ sortOnTheBasisOfSalary() : write a code to sort the name of employees based on the salary ( decreasing order of salary), put it into 			    a list and return the list
+
+==============================================================================================
+
+
  
